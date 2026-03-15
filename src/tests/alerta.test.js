@@ -15,3 +15,7 @@ test("alerta alto se nível entre 51 e 80", () => {
 test("alerta moderado se nível até 50", () => {
     expect(classificarAlerta(20)).toBe("Moderado");
 });
+
+test("alerta crítico se nível maior que 80", () => {
+ expect(classificarAlerta(90)).toBe("Alto");
+});
