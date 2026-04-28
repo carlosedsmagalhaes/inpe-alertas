@@ -4,3 +4,5 @@ Objetivo: app móvel para alertas de queimadas, inundações, desmatamento e rel
 tempo real.
 
 CI/CD configurado na Aula 3
+
+CI/CD de segurança configurado na Aula 7
