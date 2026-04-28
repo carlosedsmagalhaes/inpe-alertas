@@ -1,4 +1,4 @@
-name: CI Simples
+name: Security Checks
 
 on:
   push:
@@ -7,8 +7,9 @@ on:
     branches: [dev]
 
 jobs:
-  build:
+  security:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v4
@@ -18,5 +19,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Teste de funcionamento
-        run: echo "CI funcionando!"
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Auditoria de segurança
+        run: npm audit --audit-level=high

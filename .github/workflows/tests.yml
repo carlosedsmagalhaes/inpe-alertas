@@ -1,4 +1,4 @@
-name: CI Simples
+name: CI com ESLint e Testes
 
 on:
   push:
@@ -7,8 +7,9 @@ on:
     branches: [dev]
 
 jobs:
-  build:
+  lint-and-test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v4
@@ -16,7 +17,13 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '18'
 
-      - name: Teste de funcionamento
-        run: echo "CI funcionando!"
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar ESLint
+        run: npx eslint .
+
+      - name: Rodar Jest
+        run: npm test
