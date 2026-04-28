@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1777383789043" clover="3.2.0">
-  <project timestamp="1777383789044" name="All files">
+<coverage generated="1777384154422" clover="3.2.0">
+  <project timestamp="1777384154422" name="All files">
     <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2" elements="12" coveredelements="12" complexity="0" loc="6" ncloc="6" packages="1" files="2" classes="2"/>
     <file name="classificarAlertas.js" path="C:\Users\carlo\Documents\Meus arquivos\Faculdade\4-semestre\inpe-alertas\src\utils\classificarAlertas.js">
       <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="2" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="4" count="1" type="stmt"/>
+      <line num="2" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="2" type="stmt"/>
       <line num="7" count="2" type="stmt"/>
     </file>
     <file name="enviarNotificacao.js" path="C:\Users\carlo\Documents\Meus arquivos\Faculdade\4-semestre\inpe-alertas\src\utils\enviarNotificacao.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="2" count="1" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
     </file>
   </project>
