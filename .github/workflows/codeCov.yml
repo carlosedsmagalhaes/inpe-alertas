@@ -1,4 +1,4 @@
-name: Relatório de Testes
+name: Relatório de Testes com Codecov
 
 on:
   pull_request:
@@ -27,4 +27,3 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: ./coverage/lcov.info
