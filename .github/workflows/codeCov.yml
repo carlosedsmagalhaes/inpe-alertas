@@ -20,10 +20,14 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Gerar cobertura de testes
+      - name: Executar testes e gerar cobertura
         run: npx jest --coverage
 
-      - name: Enviar relatório para o Codecov
+      - name: Enviar relatório de cobertura para o Codecov
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage/lcov.info
+          flags: modulos-criticos
+          name: cobertura-inpe
+          fail_ci_if_error: true
